@@ -53,11 +53,11 @@ flowchart LR
 | Component | Role in plain words | Implementation |
 | --- | --- | --- |
 | Actual source-selection rules | Resolve one current authorized ID portrait or headshot and verify exact scan lineage. | [View code](reference/badgeWorkflow.ts) |
-| AI portrait preparation boundary | Prepare only the portrait; preserve hairstyle/identity and use a neutral-gray background. The public adapter is Off by default. | [View code](lab/portrait_ai.py) |
+| AI portrait preparation boundary | Prepare the portrait while keeping the person’s appearance and hairstyle, and use a neutral-gray background. The public AI connection is Off by default. | [View code](lab/portrait_ai.py) |
 | Fixed-template renderer | Apply profile name, controlled job title and artwork separately from AI; export PNG and exact-size PDF. | [View code](lab/render.py) |
 | Actual issue/reprint/revoke rules | Bind issuance to current metadata and stored artifacts; reprint without rendering or calling AI again. | [View code](reference/badgeIssuance.ts) |
 | Actual employee self-service rules | Release only the linked employee's latest, owned, clean and unrevoked issued file. | [View code](reference/badgeSelfService.ts) |
-| Scoped storage and secret access | Define private badge containers, container-only scanner reads and optional exact-secret access without key values. | [View code](infra/main.tf) |
+| Limited storage and secret access | Keep badge files private, limit scan access to those containers and optionally allow access to one selected secret without including its value. | [View code](infra/main.tf) |
 
 ## Proof It Works
 
@@ -162,7 +162,7 @@ Read [strengths, weaknesses and tradeoffs](docs/SCALING.md) for the operating de
 | [Architecture](docs/ARCHITECTURE.md) | Follow the actual service and trust boundaries |
 | [Walkthrough](docs/WALKTHROUGH.md) | Understand the steps and run the commands |
 | [Command reference](docs/COMMANDS.md) | Copy commands and check expected results |
-| [Validation evidence](docs/VALIDATION.md) | Separate recorded evidence from untested integration |
+| [Validation evidence](docs/VALIDATION.md) | Separate completed checks from work still needing real-service testing |
 | [Operations](docs/OPERATIONS.md) | Troubleshoot failure stages and recover safely |
 | [Source map](docs/SOURCE-MAP.md) | See actual extracted code versus public reference adapters |
 | [Screenshot plan](docs/SCREENSHOT-PLAN.md) | Capture actual nonproduction portal/terminal evidence later |

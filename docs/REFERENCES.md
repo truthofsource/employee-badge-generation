@@ -2,7 +2,7 @@
 
 ## Source of the case study
 
-The case study is based on the author's implemented Azure workforce platform. Actual TypeScript rules/tests are extracted with portable imports, neutral access-role prefixes and fictional fixture IDs where noted. The public example does not include production state, tenant/resource identifiers, credentials, actual employee documents or the entire hosted application.
+This case study comes from the Azure workforce platform the author built. Selected TypeScript rules and tests are included with example names and test IDs. The public project leaves out live state, cloud account/resource IDs, credentials, employee documents and the rest of the hosted application.
 
 ## Presentation inspiration
 

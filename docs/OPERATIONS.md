@@ -15,7 +15,7 @@
 
 ## Key custody and costs
 
-The implemented platform resolves a versioned secret through Key Vault and a scoped identity. The public optional adapter accepts an environment binding for local integration; never put the API key in Git, a command argument, Terraform state or logs. The source platform's durable admission/concurrency controls are separate from this one-call adapter. Configure real limits before hosted use.
+The real platform reads the selected secret version from Key Vault using an identity with limited access. The optional public connection code reads a local environment setting. Never put the API key in Git, command arguments, Terraform state or logs. This one-call example does not reproduce the platform’s saved usage and concurrency controls. Set real usage limits before hosting it.
 
 ## Retention
 
