@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "executed_at_utc": "2026-11-06T18:59:56.080063+00:00",
+  "source_tests": {
+    "passed": 21,
+    "failed": 0,
+    "command": "npm run test:source"
+  },
+  "python_tests": {
+    "passed": 16,
+    "failed": 0,
+    "command": "python -B -m unittest discover -s tests -v"
+  },
+  "demonstration_checks": 6,
+  "browser": {
+    "project": "employee-badge-generation",
+    "desktop": true,
+    "mobile": true,
+    "rerun": true,
+    "tabs": true,
+    "externalOriginDenied": true,
+    "unknownAssetDenied": true,
+    "browserErrors": 0
+  },
+  "terraform": {
+    "validate": "passed",
+    "mock_tests_passed": 2,
+    "applied": false
+  },
+  "workflow_lint": "actionlint 1.7.12 passed",
+  "source_secret_scan": "Trivy 0.75.0: zero findings",
+  "paid_requests": 0,
+  "cloud_resources_started": 0,
+  "source_hashes": {
+    "lab/__init__.py": "95a8296d613b692bb13af925e90204c901108a2c30dfd3ffd4d0fadca55cb5f9",
+    "lab/__main__.py": "2258377608c3cc887ba2c17d91aa4f6956ab03c8717e986d4a44161dada1f2cf",
+    "lab/demo.py": "1ee90686323e9ae6b91bddf1dd303e8c90c5121078f1e27634479fd3381d82bb",
+    "lab/domain.py": "1d39f738771ccddd4229bb3923fc871ef04fbec0af704044f9d79e00f5d2b73e",
+    "lab/portrait_ai.py": "8f8ee71cc4f756b6ca0d03c883ab913349fbb49f1a4b75436292301ea955b83c",
+    "lab/project.json": "045f469103530262fe7fbd347285e2c030a3202c81f70cb3dd675bfc05b964e3",
+    "lab/render.py": "b3c41938b4d5eba7aeb247a42cc5c4f6342cb506936ffa161cf944b2e3705422",
+    "lab/workbench.py": "75f6b2825564af1daaf8d7c15cfbfa4f1af645762a60ad36c3e75cb9678ebe08",
+    "reference/badgeErrors.ts": "7cfb12424bb89a3c9eeac3b45daa369e91c5119da0e81ae3b9f1ec2cdcbb547d",
+    "reference/badgeIssuance.test.ts": "522d4475f9a1822bf738a6c3eac6a6e76ee18dd2df450db71f8c890b97ada86c",
+    "reference/badgeIssuance.ts": "00ba55084ae023edf339560cfe74b6e0170b4cd84500eb464c6d02d9fe6d0cee",
+    "reference/badgePortraitGeometry.ts": "358681433f42a7b32d7b55aeb0946019c2297207eec0d9c0daabba54f227a05a",
+    "reference/badgePorts.ts": "397e28a2596da665356dc146f81f0e2996c235c6e5aa9426ca7f28ffe7f885ca",
+    "reference/badgeSelfService.test.ts": "d65a93f6671809efa044bc28fbfcb361124459f4d0ff518ab9f502ec0ef20e7f",
+    "reference/badgeSelfService.ts": "7416749242fe240a38dd5f176a6cacb7ab9dfd2fb6d599ddbdb4c8d7688d59ee",
+    "reference/badgeWorkflow.test.ts": "91756388ac95379a554336ba7790bc8ed663518aade59db35a4fe3abdd729c8d",
+    "reference/badgeWorkflow.ts": "de4a156c67e82c84a21fe063d32fa737f883fd41d3d128df2739ba19459ddaa4",
+    "infra/.terraform.lock.hcl": "9ea8e69f50b59becf0009a719679c48a64c2652dfe29d2533a1d1e18eb9cfc31",
+    "infra/main.tf": "ac685f2190e651b52f500a665cb4935d768f73a4c1d07a11ef24fbcfb5f62eae",
+    "infra/tests/badges.tftest.hcl": "08f364566bd850a743513da48fb80e8b86cedd32afd2fdfce3ab262b6fc0793d",
+    "infra/variables.tf": "6be1c265fca2b1a1908e8ddfd6385a1ffa5273d7761780d974c8f8ea68820456",
+    "infra/versions.tf": "db1503793ec020c942df29bb7a3b27489d103f44d6ba01bfa74af6d5d7ad1495"
+  }
+}

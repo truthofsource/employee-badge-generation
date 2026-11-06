@@ -1,0 +1,8 @@
+subscription_id = "<your-subscription-id>"
+resource_group_name = "rg-example-badges"
+existing_storage_account_id = "<existing-scan-protected-storage-account-resource-id>"
+scanner_principal_id = ""
+enable_ai_cleanup = false
+enable_secret_reader = false
+# Supply only a reviewed secret resource ID and version URI when commissioning.
+# Do not put an API key value in Terraform, state, plans or this example file.

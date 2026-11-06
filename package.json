@@ -1,0 +1,8 @@
+{
+  "name": "employee-badge-generation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:source": "node --experimental-strip-types --test reference/badgeWorkflow.test.ts reference/badgeIssuance.test.ts reference/badgeSelfService.test.ts"
+  }
+}

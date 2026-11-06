@@ -1,0 +1,20 @@
+{
+  "title": "AI-Assisted Employee Badge Generation",
+  "domain": "AI INTEGRATION / IDENTITY / DOCUMENT GENERATION",
+  "subtitle": "Prepare the portrait, apply trusted profile details and generate a print-ready employee badge.",
+  "scenario": "Employee badges needed a consistent design and a simpler preparation process. Staff could use an authorized ID portrait or a separate headshot, but the original identity document had to remain private and the issued badge had to stay tied to the correct employee.",
+  "outcome": "Reduce repetitive badge preparation while keeping names, titles, template layout, issued copies and employee access under application control.",
+  "flow": [
+    "Select an authorized ID portrait or headshot",
+    "Prepare the portrait; keep source appearance",
+    "Render the fixed template using profile name and title",
+    "Validate exact artifact proofs and issue the badge",
+    "Reuse the saved copy for reprint; deny access after revocation"
+  ],
+  "notes": [
+    "The public portrait is an original code-drawn fictional illustration, not a real ID or an AI quality sample.",
+    "Actual TypeScript source rules and tests cover ownership, fingerprints, direct issuance, reprints and revocation.",
+    "The optional image-edit adapter is Off by default. No API key, real employee image or paid call is used by the demo."
+  ],
+  "boundary": "Actual implementation rules plus a fictional print preview; no employee credential is issued here."
+}
