@@ -1,5 +1,7 @@
 # Employee badge generation walkthrough
 
+**Terms used here:** An artifact is a file produced for a release, such as an application ZIP or container image.
+
 ## 1. Resolve the employee and source
 
 HR/Admin selects the employee. The application resolves the current profile and either a previously authorized ID image or a separate headshot. The actual source rule requires the correct employee, one current candidate, read permission and exact scan proof. A headshot remains an independent fallback when the ID portrait is unavailable.

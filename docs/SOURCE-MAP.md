@@ -1,11 +1,13 @@
 # Actual implementation and public reference map
 
+**Terms used here:** An artifact is a file produced for a release, such as an application ZIP or container image. A fixture is test data or a test setup used instead of real business records.
+
 | Public code | Origin / purpose |
 | --- | --- |
 | `reference/badgeWorkflow.ts` and its test | Actual source resolution, profile name, crop and preparation-fingerprint rules |
 | `reference/badgePortraitGeometry.ts` | Actual validated geometry metadata used by source fingerprints |
 | `reference/badgeIssuance.ts` and its test | Actual repeat-safe review/direct issue/reprint/revoke logic through repository ports |
-| `reference/badgeSelfService.ts` and its test | Actual employee-owned current badge and exact artifact release rules |
+| `reference/badgeSelfService.ts` and its test | Actual employee-owned current badge and exact release file release rules |
 | `reference/badgeErrors.ts` / `badgePorts.ts` | Small public error/type boundary replacing private SQL/blob adapter imports |
 | `lab/render.py` | Portable fixed-template renderer at the same physical badge size, with fictional artwork/input |
 | `lab/portrait_ai.py` | Small optional image-edit integration matching the portrait-only boundary; not the entire hosted AI assessment system |

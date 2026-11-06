@@ -1,6 +1,6 @@
 # AI-Assisted Employee Badge Generation
 
-**Prepare the portrait, apply trusted profile details and generate a print-ready employee badge.**
+**Turn an approved employee photo into a consistent, print-ready badge.**
 
 [The problem](#the-business-problem) · [The solution](#the-solution) · [What was built](#what-was-built) · [Proof it works](#proof-it-works) · [Commands](docs/COMMANDS.md)
 
@@ -8,17 +8,13 @@
 
 ## The Business Problem
 
-Employee badges needed a consistent design and a quicker preparation process. Staff could start with an authorized ID image or a separate headshot, but the original ID had to remain private. Name, title, portrait and issued files needed to stay tied to the same employee.
-
-1. **Repeated manual editing.** Cropping a portrait and placing names in a template is slow and inconsistent.
-2. **AI changes the wrong thing.** Portrait cleanup must preserve appearance; the application should control names, job titles and branding.
-3. **An old draft or wrong employee gets issued.** A source/profile/template change must invalidate stale preparation, while reprints must use the exact issued files.
+Preparing badges by hand takes time and can produce inconsistent results. Staff may start with an authorized ID image or a separate headshot, but the original ID must remain private. The photo, name, title and issued files must all stay connected to the right employee.
 
 ## The Solution
 
-Prepare the main portrait from the authorized source, then render the fixed badge template with server-read profile details. Validate current ownership, fingerprints and artifact clean proofs before direct issuance. Save exact issued PNG/PDF versions for employee access, reprint and revocation.
+Prepare the portrait, then place it in a fixed badge design using the employee’s saved name and job title. Check the current photo, profile and file-scan results before issuing the badge. Save the exact issued copies so employees can view them and staff can reprint or revoke them.
 
-**Business goal:** Reduce repetitive badge preparation while keeping names, titles, template layout, issued copies and employee access under application control.
+**Business outcome:** Reduce repetitive editing while keeping employee details, badge design, issued copies and access under application control.
 
 ### Actual implementation
 
@@ -27,7 +23,7 @@ This case study comes from the workforce platform I built and operated. It inclu
 - Built portrait preparation from an existing authorized ID image or a standalone headshot, with source appearance and hairstyle preservation.
 - Kept the template, logo, employee profile name and job title application-controlled; produced print-ready PNG/PDF badge artifacts.
 - Implemented direct issuance, saved versions, reprints, revocation and protected employee self-service.
-- Used a versioned Key Vault credential binding and separate operational controls for paid image cleanup and unused-artifact retention.
+- Used a versioned Key Vault credential binding and separate operational controls for paid image cleanup and unused-how long release files are kept.
 
 The included local preview is a reproducible example. It does not replace actual nonproduction portal acceptance. [The evidence guide](docs/VALIDATION.md) distinguishes source tests, local output and cloud observations.
 
@@ -134,7 +130,7 @@ Windows: use `.venv\Scripts\python.exe` for the Python commands and `npm.cmd` if
 
 ## Terraform Infrastructure
 
-Two private badge containers on an existing scan-protected storage account, a reference application identity, container-scoped roles and optional exact-secret access. This root does not deploy the business API or activate paid image cleanup.
+Two private badge containers on an existing scan-protected storage account, a reference application identity, container-specific roles and optional exact-secret access. This root does not deploy the business API or activate paid image cleanup.
 
 ```bash
 terraform -chdir=infra init -backend=false -input=false

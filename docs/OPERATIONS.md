@@ -1,11 +1,13 @@
 # Employee badge operations and troubleshooting
 
+**Terms used here:** An artifact is a file produced for a release, such as an application ZIP or container image. Terraform state is its record of the cloud resources it manages.
+
 | Symptom | Likely boundary to inspect | Correct response |
 | --- | --- | --- |
 | ID portrait cannot be selected | Exact employee binding, current source, file readability and scan proof | Correct source selection or use an authorized headshot; do not cross-bind another record |
 | AI preparation fails | Secret version/model binding, paid-request admission, provider response and source quality | Preserve safe request metadata; do not automatically repeat paid requests |
 | Hair/appearance changed | Source-quality and before/after assessment | Keep the source, reject unsuitable output and use a clearer headshot where needed |
-| Preview is stale | Current profile, draft revision, crop, template and artifact fingerprint | Prepare the current version; do not reuse an old issue fingerprint |
+| Preview is stale | Current profile, draft revision, crop, template and release-file fingerprint | Prepare the current version; do not reuse an old issue fingerprint |
 | Artifact is pending | Actual malware result, event queue and processor | Wait/investigate; a generated PDF is not automatically scan-cleared |
 | Reprint changes design | Reprint should read saved issued artifacts | Do not re-render or call AI when requesting an existing issued version |
 | Employee cannot open badge | Signed-in account link, latest version, revocation and exact clean artifact | Check ownership/read binding without exposing the original ID |

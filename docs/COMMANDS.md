@@ -1,5 +1,7 @@
 # Commands and expected results
 
+**Terms used here:** Role-based access control gives people or services permissions according to their roles. DNS turns a service name into the network address used to reach it.
+
 Run from the repository root. These commands reproduce local source/reference checks; they do not apply Azure resources.
 
 ## Setup
@@ -45,7 +47,7 @@ The source tests exercise actual lifecycle/ownership rules. The renderer exports
 
 ## Optional paid portrait adapter
 
-The default CLI does not call an external image service. The function `lab.portrait_ai.prepare_portrait` is a separately enabled integration boundary. See [portrait preparation](PORTRAIT-PREPARATION.md) before configuring a model/credential or sending approved source material. No live paid call is claimed by the public validation.
+The default CLI does not call an external image service. The function `lab.portrait_ai.prepare_portrait` is a separately enabled area that still needs testing with real services. See [portrait preparation](PORTRAIT-PREPARATION.md) before configuring a model/credential or sending approved source material. No live paid call is claimed by the public validation.
 
 
 ## Terraform without cloud mutation

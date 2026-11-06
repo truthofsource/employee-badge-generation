@@ -1,5 +1,7 @@
 # Validation evidence
 
+**Terms used here:** DNS turns a service name into the network address used to reach it.
+
 ## Executed locally
 
 | Check | Recorded result |
@@ -7,7 +9,7 @@
 | Actual extracted TypeScript rules | 21 tests passed |
 | Python reference/renderer | 16 tests passed |
 | Executed demonstration | 6 checks passed |
-| Terraform schema and mock plans | Validate passed; 2 mock tests passed; no apply |
+| Terraform schema and mock plans | Validate passed; 2 tests using simulated cloud responses passed; no apply |
 | Browser | Desktop and 390-pixel mobile, tabs/rerun, origin/asset denials passed |
 | Workflow syntax | actionlint 1.7.12 passed; no hosted workflow dispatched |
 | Source secret scan | Trivy 0.75.0: zero findings in this prepared input |

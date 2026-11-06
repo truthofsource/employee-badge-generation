@@ -1,5 +1,7 @@
 # AI-Assisted Employee Badge Generation architecture
 
+**Terms used here:** An artifact is a file produced for a release, such as an application ZIP or container image. DNS turns a service name into the network address used to reach it.
+
 ## Business and implementation context
 
 Employee badges needed a consistent design and a quicker preparation process. Staff could start with an authorized ID image or a separate headshot, but the original ID had to remain private. Name, title, portrait and issued files needed to stay tied to the same employee.
@@ -7,7 +9,7 @@ Employee badges needed a consistent design and a quicker preparation process. St
 - Built portrait preparation from an existing authorized ID image or a standalone headshot, with source appearance and hairstyle preservation.
 - Kept the template, logo, employee profile name and job title application-controlled; produced print-ready PNG/PDF badge artifacts.
 - Implemented direct issuance, saved versions, reprints, revocation and protected employee self-service.
-- Used a versioned Key Vault credential binding and separate operational controls for paid image cleanup and unused-artifact retention.
+- Used a versioned Key Vault credential binding and separate operational controls for paid image cleanup and unused-how long release files are kept.
 
 ## Processing path
 
@@ -48,6 +50,6 @@ flowchart LR
 
 ## Deployment boundary
 
-Two private badge containers on an existing scan-protected storage account, a reference application identity, container-scoped roles and optional exact-secret access. This root does not deploy the business API or activate paid image cleanup.
+Two private badge containers on an existing scan-protected storage account, a reference application identity, container-specific roles and optional exact-secret access. This root does not deploy the business API or activate paid image cleanup.
 
 No resource was applied for this project packaging. A real deployment requires correct identities, network/DNS reachability, permissions, package/schema compatibility and recovery acceptance. The local dashboard is not an internet-facing multi-user application.
