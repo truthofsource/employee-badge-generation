@@ -27,13 +27,26 @@ This case study comes from the workforce platform I built and operated. It inclu
 
 The included local preview is a reproducible example. It does not replace actual nonproduction portal acceptance. [The evidence guide](docs/VALIDATION.md) distinguishes source tests, local output and cloud observations.
 
+## Tools Used and What They Do
+
+| Tool or service | What it does | Where it fits |
+| --- | --- | --- |
+| OpenAI image-edit API | Prepare an authorized portrait while preserving reliable visible appearance. | Actual AI integration boundary; optional public adapter is not called by default. |
+| Node.js and TypeScript | Enforce badge preparation, issuance and employee-access rules. | Actual selected source; the full hosted adapters are not reproduced. |
+| Azure Key Vault and managed identity | Protect and retrieve the selected service credential. | Actual platform credential path; the public example does not include a key. |
+| Azure Blob Storage and Defender for Storage | Retain private sources/artifacts and check their file safety. | Actual platform services; local rendering does not establish a clean scan. |
+| Python, Pillow and PyMuPDF | Render the fictional badge and inspect its image/PDF output. | Public demonstration tools, not a claim about every hosted rendering library. |
+| Terraform and GitHub Actions | Describe related resources and run reference validation. | Public checks are local/manual-only; no AI request or deployment is automatic. |
+
+The AI prepares the portrait; application-controlled rendering owns the name, title, logo and layout. The fictional preview does not demonstrate real employee image quality.
+
 ## Step by Step
 
 A short walkthrough of the process, with technical instructions and evidence limits in the sections below.
 
 1. **Select an authorized photo** — Use the employee photo from an approved identification image or a separate headshot. Check that the source belongs to the selected employee and has the required file-check status.
 
-2. **Prepare the portrait** — The preparation process crops and cleans the portrait while aiming to preserve the person's appearance. The public example leaves the paid AI connection off by default.
+2. **Prepare the portrait (OpenAI image-edit API)** — The preparation process crops and cleans the portrait while aiming to preserve the person's appearance. The public example leaves the paid AI connection off by default.
 
 3. **Apply the fixed badge design** — The application places the portrait into the saved template with the employee profile name and job title. The template and logo stay under application control.
 
