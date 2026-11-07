@@ -167,6 +167,10 @@ Read [strengths, weaknesses and tradeoffs](docs/SCALING.md) for the operating de
 - Versioned Key Vault references and scoped Blob access
 - Idempotency, immutable artifacts and recovery
 
+## Troubleshooting Lessons
+
+An automated appearance pass did not guarantee that a portrait looked suitable. Source comparison exposed hairstyle changes, while uncertain paid requests and protected file checks still required separate handling. [Read the incident, evidence and verification](docs/LESSONS-LEARNED.md).
+
 ## Project Guides
 
 | Guide | Purpose |

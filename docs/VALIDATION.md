@@ -33,3 +33,9 @@ python -B -m lab demo
 - Mock plans do not prove deployed IAM, DNS, queue delivery, SQL adapter or application hosting.
 - No Azure service start, actual employee operation, live provider request or paid image call occurred for this preparation.
 - [Nonproduction screenshot capture](SCREENSHOT-PLAN.md) remains optional follow-up. Existing accepted operational history is not relabeled as a fresh cloud test.
+
+## Troubleshooting documentation review — November 7, 2026
+
+Added a README incident summary and a linked historical lessons guide, checking the account against the maintained source records. Documentation checks covered local links, complete incident fields, identifying-information patterns, whitespace and preservation of the existing four-step walkthrough. Shared incidents link to the relevant project details; unresolved causes remain explicit.
+
+This was an editorial update. Application code, tests, Terraform, images, workflow definitions and cloud settings were not changed. Existing functional test counts and screenshots above retain their original scope and dates; no application suite, live scan, paid image request, recovery rehearsal or GitHub Actions run was executed for this documentation pass.
