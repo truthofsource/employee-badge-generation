@@ -2,7 +2,7 @@
 
 **Turn an approved employee photo into a consistent, print-ready badge.**
 
-[The problem](#the-business-problem) · [The solution](#the-solution) · [What was built](#what-was-built) · [Proof it works](#proof-it-works) · [Commands](docs/COMMANDS.md)
+[The problem](#the-business-problem) · [The solution](#the-solution) · [What was built](#what-was-built) · [Proof it works](#proof-it-works) · [Commands](docs/COMMANDS.md) · [Step by step](#step-by-step)
 
 ![Working local demonstration](docs/images/01-overview.png)
 
@@ -23,9 +23,21 @@ This case study comes from the workforce platform I built and operated. It inclu
 - Built portrait preparation from an existing authorized ID image or a standalone headshot, with source appearance and hairstyle preservation.
 - Kept the template, logo, employee profile name and job title application-controlled; produced print-ready PNG/PDF badge artifacts.
 - Implemented direct issuance, saved versions, reprints, revocation and protected employee self-service.
-- Used a versioned Key Vault credential binding and separate operational controls for paid image cleanup and unused-how long release files are kept.
+- Used a versioned Key Vault credential binding and separate operational controls for paid image cleanup and retention of unused badge files.
 
 The included local preview is a reproducible example. It does not replace actual nonproduction portal acceptance. [The evidence guide](docs/VALIDATION.md) distinguishes source tests, local output and cloud observations.
+
+## Step by Step
+
+A short walkthrough of the process, with technical instructions and evidence limits in the sections below.
+
+1. **Select an authorized photo** — Use the employee photo from an approved identification image or a separate headshot. Check that the source belongs to the selected employee and has the required file-check status.
+
+2. **Prepare the portrait** — The preparation process crops and cleans the portrait while aiming to preserve the person's appearance. The public example leaves the paid AI connection off by default.
+
+3. **Apply the fixed badge design** — The application places the portrait into the saved template with the employee profile name and job title. The template and logo stay under application control.
+
+4. **Issue and manage the badge** — Save the issued files for protected employee viewing and staff reprints. Revocation marks a badge unavailable through the application without silently generating a new copy.
 
 ## Architecture
 
