@@ -8,7 +8,11 @@
 
 ## The Business Problem
 
-Preparing badges by hand takes time and can produce inconsistent results. Staff may start with an authorized ID image or a separate headshot, but the original ID must remain private. The photo, name, title and issued files must all stay connected to the right employee.
+HR needs consistent, print-ready employee badges with the correct photograph, profile name, job title and organization design. Starting from differently sized headshots or authorized ID photos means repeated cropping, cleanup and layout work. Image quality varies, and the employee's appearance must remain recognizable throughout preparation.
+
+The source ID contains personal information that should stay separate from the badge issued to the employee. Staff also need to know which version was issued, reproduce that exact copy for a reprint and withdraw access when a badge is revoked. A visually convincing image can still be wrong if it uses another person's photo or outdated profile details.
+
+The business need was to simplify badge preparation while keeping the employee link, fixed design, issued versions and download permissions under application control.
 
 ## The Solution
 
